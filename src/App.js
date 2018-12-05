@@ -5,6 +5,7 @@ import { DaftarPasien } from './screens/DaftarPasien';
 import { Home } from './screens/Home';
 import { NotFound } from './screens/NotFound';
 import { UpdatePasien } from './screens/UpdatePasien';
+import { DaftarAllStaffFarmasi } from './screens/DaftarStafFarmasi';
 
 export class App extends React.Component {
 	render() {
@@ -24,7 +25,7 @@ export class App extends React.Component {
 									<NavLink to="/all-pasien" exact className="nav-link" activeClassName="active">Daftar Pasien</NavLink>
 								</li>
 								<li className='nav-item'>
-									<NavLink to="" exact className="nav-link" activeClassName="active">Daftar Staf Farmasi</NavLink>
+									<NavLink to="/all-staff-farmasi" exact className="nav-link" activeClassName="active">Daftar Staf Farmasi</NavLink>
 								</li>
 							</ul>
 						</div>
@@ -36,6 +37,7 @@ export class App extends React.Component {
 							<Route path="/all-pasien" exact component={DaftarPasien} />
 							<Route path="/update-pasien/:id" exact component={UpdatePasien} />
 							<Route path="/not-found" exact component={NotFound} />
+							<Route path="/all-staff-farmasi" exact component={DaftarAllStaffFarmasi} />
 							<Route component={NotFound} />
 						</Switch>
 					</div>

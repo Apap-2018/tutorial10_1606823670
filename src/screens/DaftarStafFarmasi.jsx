@@ -1,5 +1,5 @@
 import React from 'react';
-import { DaftarPasienRow } from '../components/DaftarPasienRow';
+import { DaftarStaffFarmasiRow } from '../components/DaftarStaffFarmasiRow';
 import { Loading } from '../components/Loading';
 import { TableContainer } from '../containers/TableContainer';
 import { Appointment } from '../utils/Appointment';
@@ -28,7 +28,7 @@ export class DaftarAllStaffFarmasi extends React.Component {
         } else {
             return (
                 <TableContainer title="Daftar Staff Farmasi" header={['Nama Staff', 'Jenis Staff']}>
-                    <DaftarPasienRow listPasien={this.state.listPasien}/>
+                    <DaftarStaffFarmasiRow listStaffFarmasi={this.state.listStaffFarmasi}/>
                 </TableContainer>
             )
         }
